@@ -261,13 +261,46 @@ p{
 
 .skill-nav ul li a{
     text-decoration: none;
-
+    cursor: pointer;
     font-size: medium;
     font-weight: bold;
     text-transform: uppercase;
     color: #78A083;
     transition: all 0.5s ease;
 }
+
+.table-contents ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: medium;
+    color: #EEEEEE;
+    font-weight: 200;
+    padding-left: 6rem;
+    gap: 0.5rem;
+    width: 700px;
+    height: 70px;
+
+}
+
+.table-contents{
+        padding-top: 2rem;
+}
+
+.table-contents ul li span{
+    font-size: large;
+    color: #eb1c5d;
+    font-weight: bold;
+}
+
+.table-contents{
+    display: none;
+    
+}
+
+.active-table{
+    display: block;
+}
+
 
 /* .skill-nav ul li a::after{
     content: "";
