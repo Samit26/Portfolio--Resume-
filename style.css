@@ -259,7 +259,7 @@ p{
     padding-top: 1rem;
 }
 
-.skill-nav ul li a{
+.tab-links{
     text-decoration: none;
     cursor: pointer;
     font-size: medium;
@@ -267,6 +267,14 @@ p{
     text-transform: uppercase;
     color: #78A083;
     transition: all 0.5s ease;
+}
+
+.skill-nav ul li a:hover{
+    color: #eb1c5d;
+}
+
+.active-list{
+    color: #eb1c5d;
 }
 
 .table-contents ul li{
