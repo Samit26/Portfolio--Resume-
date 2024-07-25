@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="home">
         <nav class="navbar">
             <ul>
-                <li><a href="#" id="home">Home</a></li>
-                <li><a href="#main" id="about">About</a></li>
-                <li><a href="#" id="project">Projects</a></li>
-                <li><a href="#" id="contact">Contact</a></li>
+                <li><a onclick="navBtn('home')" class="navbar-a active-nav" id="home-1">Home</a></li>
+                <li><a onclick="navBtn('about')" class="navbar-a" id="about-1">About</a></li>
+                <li><a onclick="navBtn('project')" class="navbar-a" id="project-1">Projects</a></li>
+                <li><a onclick="navBtn('contact')" class="navbar-a" id="contact-1">Contact</a></li>
             </ul>
         </nav>
         <div class="left-side-bar">
@@ -34,9 +34,9 @@
                     <button id="btn-1">
                         Hire Me
                     </button>
-                    <button id="btn-2">
+                    <!-- <button id="btn-2">
                         View Projects
-                    </button>
+                    </button> -->
                 </div>
                 <div class="icons-1">
                     <i class="fa-brands fa-facebook-f"></i>
@@ -57,7 +57,7 @@
             <div class="circle-2"></div>
         </div>
     </div>
-    <div class="main" id="main">
+    <div class="about" id="about">
 
         <div class="card">
             <div class="photo"></div>
@@ -93,6 +93,40 @@
                     <li><span>College</span><br>In 3rd sem (Computer Engineering)</li>
                 </ul>
             </div>
+        </div>
+    </div>
+    <div class="projects" id="project">
+        <div class="container">
+            <div class="arrow"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="card-holder">
+                <div class="card-img"> </div>
+                   <div class="card-content">
+                       <h1 class="h1-card">Project 1</h1>
+                       <p class="p-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, dolore iste laborum beatae animi tempora ducimus, reprehenderit deserunt sint v</p>
+                       <button class="btn-1" id="project-btn-1">View Project</button>
+                    </div>
+              </div>
+
+            <div class="card-holder">
+                <div class="card-img"> </div>
+                   <div class="card-content">
+                       <h1 class="h1-card">Project 1</h1>
+                       <p class="p-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, dolore iste laborum beatae animi tempora ducimus, reprehenderit deserunt sint v</p>
+                       <button class="btn-1" id="project-btn-2">View Project</button>
+                    </div>
+            
+            </div>
+
+            <div class="card-holder">
+                <div class="card-img"> </div>
+                   <div class="card-content">
+                       <h1 class="h1-card">Project 1</h1>
+                       <p class="p-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, dolore iste laborum beatae animi tempora ducimus, reprehenderit deserunt sint v</p>
+                       <button class="btn-1" id="project-btn-3">View Project</button>
+                    </div>
+            
+            </div>
+            <div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
         </div>
     </div>
 <script src="script.js"></script>

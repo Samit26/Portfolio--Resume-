@@ -29,8 +29,9 @@
     margin-right: 2.5rem; /* Converted from 40px */
 }
 
-.navbar ul a {
+.navbar-a {
     text-decoration: none;
+    cursor: pointer;
     font-size: medium;
     font-weight: bold;
     text-transform: uppercase;
@@ -43,12 +44,9 @@
     font-size: large;
 }
 
-.navbar ul a:active {
-    text-decoration: none;
-    font-size: large;
-    font-weight: bold;
-    text-transform: uppercase;
+.active-nav{
     color: #5180e6;
+    font-size: large;
 }
 
 .left-side-bar {
@@ -183,7 +181,7 @@ h1 {
     border-radius: 50%;
 }
 
-.main{
+.about{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -324,6 +322,99 @@ p{
 .skill-nav ul li a.active::after{
     width: 50%;
 } */
+
+/* Project section start here */
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(180deg, #344955 , #526D82 70%);
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+.card-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 57%;
+    width: 20%;
+    background: linear-gradient(180deg, #344955 , #526D82 70%);
+    border-radius: 5%;
+    box-shadow: 0 0 20px 0 rgba(182, 176, 222, 0.5);
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 55%;
+    background-color: #EEEDEB;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+
+}
+.card-img{
+    height: 45%;
+    width: 100%;
+    top: 0;
+    background-image: url(image.jpeg);
+    background-size: cover;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    box-shadow: 0 0 20px 0 rgba(182, 176, 222, 0.5);
+}
+
+.arrow{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    color: #eb1c5d;
+}
+
+.h1-card{
+    color: #E6B9A6;
+    font-size: 2rem;
+    padding-top: 0.8rem;
+    padding-left: 0;
+    font-weight: bold;
+    text-decoration: dotted;
+}
+.p-card{
+    color: #2F3645;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 0.8rem;
+    padding-left: 0;
+    padding-top: 0.5rem;
+    width: 90%;
+    margin-top: 0.5rem;
+
+    font-weight: 400;
+}
+
+.btn-1{
+    color: #eb1c5d;
+    font-size: 1rem;
+    font-weight: 800;
+    border-radius: .8rem;
+    border: 2px solid #eb1c5d;
+    padding: 0.5rem;
+    margin-top: 1.7rem;
+    background-color:  rgba(240, 208, 208, 0.5);
+}
 
 @media (max-width: 768px) {
    .header{
